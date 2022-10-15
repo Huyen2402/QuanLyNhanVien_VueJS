@@ -1,9 +1,9 @@
 <template>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <a href="/" class="navbar-brand">Ứng dụng Quản lý nhân viên</a>
         <ul class="navbar-nav ">
             <li class="nav-item ">
-                <router-link class="nav-link" to="/">Nhân Viên</router-link>
+                <router-link class="nav-link" to="/nhanvien">Nhân Viên</router-link>
              
             </li>
             <li class="nav-item">
@@ -14,6 +14,10 @@
             
                 <router-link class="nav-link" to="/chucVu">Chức Vụ</router-link>
             </li>
+            <li class="nav-item">
+            
+            <router-link class="nav-link" to="/">Đăng Nhập</router-link>
+        </li>
         </ul>
         <!-- <div class="mr-auto navbar-nav">
             <li class="nav-item">

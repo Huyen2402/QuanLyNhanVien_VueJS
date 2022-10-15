@@ -3,7 +3,7 @@ import ContactBook from "@/views/ContactBook.vue";
 
 const routes = [
    {
-   path: "/",
+   path: "/nhanvien",
     name: "contactbook",
     component: ContactBook,
   },
@@ -44,6 +44,12 @@ const routes = [
     path: "/PhongEdit/:id",
     name: "phong.edit",
     component: () => import("@/views/PhongEdit.vue"),
+    props: true, // Truyền các biến trong $route.params vào làm props
+  },
+  {
+    path: "/",
+    name: "dangnhap",
+    component: () => import("@/views/DangNhap.vue"),
     props: true, // Truyền các biến trong $route.params vào làm props
   },
 ];
