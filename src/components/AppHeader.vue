@@ -14,7 +14,12 @@
             
                 <router-link class="nav-link" to="/chucVu">Chức Vụ</router-link>
             </li>
-            <li class="nav-item">
+            
+            <li v-if="loadState" class="nav-item">
+            
+            <router-link class="nav-link" to="/">Đăng Xuất</router-link>
+        </li>
+        <li v-else class="nav-item">
             
             <router-link class="nav-link" to="/">Đăng Nhập</router-link>
         </li>
@@ -29,3 +34,27 @@
         </div> -->
     </nav>
 </template>
+<script>
+
+export default {
+
+    methods: {
+         loadState () {
+  try {
+    if(localStorage.getItem('User')){
+      
+   return true
+    }
+    
+  
+  } catch (err) {
+    return undefined;
+  }
+  
+},
+        
+    },
+    
+};
+
+</script>

@@ -21,5 +21,6 @@ return (await this.api.put(`/${id}`, data)).data;
 async delete(id) {
 return (await this.api.delete(`/${id}`)).data;
 }
+
 }
 export default new ContactService();

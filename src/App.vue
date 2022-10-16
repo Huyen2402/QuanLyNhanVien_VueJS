@@ -6,6 +6,7 @@ export default {
     AppHeader,
     AppFooter
 },
+
 }
 
 </script>
@@ -14,6 +15,7 @@ export default {
   <div  >
     <AppHeader/>
     <div class="container mt-3">
+      
       <router-view />
     </div>
     <AppFooter/>

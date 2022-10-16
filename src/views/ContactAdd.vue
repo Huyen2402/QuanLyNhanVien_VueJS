@@ -2,6 +2,7 @@
 import * as yup from "yup";
 import { Form, Field, ErrorMessage } from "vee-validate";
 import ContactService from '../services/contact.service.js'
+
 export default {
   components: {
     Form,
@@ -53,6 +54,7 @@ export default {
             phone: this.phone,
             favorite: this.favorite,
         });
+        
         this.message = "Thêm liên hệ mới thành công.";
       } catch (error) {
         console.log(error);
