@@ -54,7 +54,8 @@ export default {
                 localStorage['User'] = ckeck.message;
                 var website =localStorage.getItem('User');
                 console.log(website);
-                 this.$router.push('/nhanvien')
+             
+                 location.href = 'http://127.0.0.1:5173/nhanvien'
 
 
                 this.message = "Đăng nhập thành công.";
