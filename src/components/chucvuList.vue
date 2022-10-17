@@ -18,12 +18,9 @@ export default {
     <table class="table table-striped">
     <thead>
       <tr>
-        <th>Họ Tên</th>
+       
         <th>Chức Vụ</th>
-        <th>Phòng Ban</th>
-        <th>Email</th>
-        <th>Địa Chỉ</th>
-        <th>SDT</th>
+       
         <th>Thao Tác</th>
       </tr>
     </thead>
@@ -35,29 +32,10 @@ export default {
             {{ contact.name }}
     
       </td>
-      <td  @click="updateActiveIndex(index)">
-            {{ contact.chucVu }}
-    
-      </td>
-      <td  @click="updateActiveIndex(index)">
-            {{ contact.phong }}
-    
-      </td>
-      <td  @click="updateActiveIndex(index)">
-            {{ contact.email }}
-    
-      </td>
-      <td  @click="updateActiveIndex(index)">
-            {{ contact.address }}
-    
-      </td>
-      <td  @click="updateActiveIndex(index)">
-            {{ contact.phone }}
-    
-      </td>
+     
       <td>
         <router-link :to="{
-                name: 'contact.edit',
+                name: 'chucvu.edit',
                 params: { id: contact._id },
                 }">
                          <button type="button" class="btn btn-warning">Chỉnh Sửa</button>

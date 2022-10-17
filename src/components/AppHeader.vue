@@ -12,7 +12,7 @@
             </li>
             <li class="nav-item">
             
-                <router-link class="nav-link" to="/chucVu">{{ message3 }}</router-link>
+                <router-link class="nav-link" to="/chucvu">{{ message3 }}</router-link>
             </li>
             
         

@@ -12,6 +12,12 @@ const routes = [
     name:"phong",
     component: () => import("@/views/Phong.vue"),
   },
+  {
+    path: "/chucvu",
+    name: "chucvu",
+    component: () => import("@/views/ChucVu.vue"),
+ 
+  },
   // {
   //   path: "/chucVu",
   //    name: "chucvu",
@@ -29,9 +35,21 @@ const routes = [
     props: true, // Truyền các biến trong $route.params vào làm props
   },
   {
+    path: "/chucvus/:id",
+    name: "chucvu.edit",
+    component: () => import("@/views/ChucVuEdit.vue"),
+    props: true, // Truyền các biến trong $route.params vào làm props
+  },
+  {
     path: "/contactsAdd",
     name: "contact.add",
     component: () => import("@/views/ContactAdd.vue"),
+    props: true, // Truyền các biến trong $route.params vào làm props
+  },
+  {
+    path: "/ChucVuAdd",
+    name: "chucvu.add",
+    component: () => import("@/views/ChucVuAdd.vue"),
     props: true, // Truyền các biến trong $route.params vào làm props
   },
   {
@@ -52,6 +70,7 @@ const routes = [
     component: () => import("@/views/DangNhap.vue"),
     props: true, // Truyền các biến trong $route.params vào làm props
   },
+
 ];
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

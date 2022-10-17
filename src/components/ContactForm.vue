@@ -26,6 +26,11 @@
             <Field name="chucVu" type="text" class="form-control" v-model="contactLocal.chucVu" />
             <ErrorMessage name="chucVu" class="error-feedback" />
         </div>
+        <div class="form-group">
+            <label for="phong">Phòng Ban</label>
+            <Field name="phong" type="text" class="form-control" v-model="contactLocal.phong" />
+            <ErrorMessage name="phong" class="error-feedback" />
+        </div>
         <div class="form-group form-check">
             <input name="favorite" type="checkbox" class="form-check-input" v-model="contactLocal.favorite" />
             <label for="favorite" class="form-check-label">

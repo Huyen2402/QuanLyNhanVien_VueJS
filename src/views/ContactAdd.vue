@@ -40,6 +40,7 @@ export default {
       email: '',
       address: '',
       phone: '',
+      phong:'',
       favorite: false,
       message: '',
     };
@@ -53,6 +54,7 @@ export default {
             address: this.address,
             phone: this.phone,
             chucVu: this.chucVu,
+            phong: this.phong,
             favorite: this.favorite,
         });
         
@@ -93,6 +95,11 @@ export default {
         <label for="chucVu">Chức Vụ</label>
         <Field name="chucVu" type="text" class="form-control" v-model="chucVu"/>
         <ErrorMessage name="chucVu" class="error-feedback" />
+      </div>
+      <div class="form-group">
+        <label for="phong">Phòng Ban</label>
+        <Field name="phong" type="text" class="form-control" v-model="phong"/>
+        <ErrorMessage name="phong" class="error-feedback" />
       </div>
       <div class="form-group form-check">
         <input name="favorite" type="checkbox" class="form-check-input" v-model="favorite"/>

@@ -1,5 +1,5 @@
 <template>
-    <div class=" ">
+    <div class="page ">
         <!-- <div class="col-md-10">
             <InputSearch v-model="searchText" />
         </div> -->
@@ -8,7 +8,7 @@
                 Thông Tin Nhân Viên
                
             </h4>
-            <ContactList v-if="filteredContactsCount > 0" :contacts="filteredContacts"
+            <ChucvuList v-if="filteredContactsCount > 0" :contacts="filteredContacts"
                 v-model:activeIndex="activeIndex" />
             <p v-else>Không có liên hệ nào.</p>
             <div class="mt-3 row justify-content-around align-items-center">
@@ -46,14 +46,16 @@
 import ContactCard from "@/components/ContactCard.vue";
 import InputSearch from "@/components/InputSearch.vue";
 import ContactList from "@/components/ContactList.vue";
-import ContactService from "@/services/contact.service";
+import ContactService from "@/services/chucvu.service";
 import contactService from "../services/contact.service";
+import ChucvuList from "../components/chucvuList.vue";
 export default {
     components: {
-        ContactCard,
-        InputSearch,
-        ContactList,
-    },
+    ContactCard,
+    InputSearch,
+    ContactList,
+    ChucvuList
+},
     data() {
         return {
             contacts: [],
@@ -72,8 +74,8 @@ export default {
         // Chuyển các đối tượng contact thành chuỗi để tiện cho tìm kiếm.
         contactStrings() {
             return this.contacts.map((contact) => {
-                const { name, email, address, phone, chucVu, phong } = contact;
-                return [name, email, address, phone, chucVu, phong].join("");
+                const { name } = contact;
+                return [name].join("");
             });
         },
         // Trả về các contact có chứa thông tin cần tìm kiếm.
@@ -114,7 +116,7 @@ export default {
             }
         },
         goToAddContact() {
-            this.$router.push({ name: "contact.add" });
+            this.$router.push({ name: "chucvu.add" });
             
         },
     },
@@ -131,6 +133,6 @@ export default {
 <style scoped>
 .page {
     text-align: left;
-    
+    max-width: 750px;
 }
 </style>
