@@ -52,6 +52,7 @@ export default {
             email: this.email,
             address: this.address,
             phone: this.phone,
+            chucVu: this.chucVu,
             favorite: this.favorite,
         });
         
@@ -87,6 +88,11 @@ export default {
         <label for="phone">Số Điện Thoại</label>
         <Field name="phone" type="text" class="form-control" v-model="phone"/>
         <ErrorMessage name="phone" class="error-feedback" />
+      </div>
+      <div class="form-group">
+        <label for="chucVu">Chức Vụ</label>
+        <Field name="chucVu" type="text" class="form-control" v-model="chucVu"/>
+        <ErrorMessage name="chucVu" class="error-feedback" />
       </div>
       <div class="form-group form-check">
         <input name="favorite" type="checkbox" class="form-check-input" v-model="favorite"/>

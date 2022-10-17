@@ -16,7 +16,7 @@
             </li>
             
         
-        <li class="nav-item">
+        <li @click="logOut" class="nav-item">
             
             <router-link class="nav-link" to="/">{{ message }}</router-link>
         </li>
@@ -79,7 +79,12 @@ var bien = localStorage.getItem('User')
                     return ''
                 }
                
+            },
+            logOut (){
+                localStorage.removeItem('User')
+                location.href = 'http://127.0.0.1:5173'
             }
+
         }
     }
 
