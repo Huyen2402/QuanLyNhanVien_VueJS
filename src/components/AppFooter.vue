@@ -4,7 +4,7 @@
 
 <!-- Copyright -->
 <div id="footer" class="footer-copyright text-center py-3 fixed-bottom "><span id="text">© 2020 Copyright:</span>
-  <a href="/"> MDBootstrap.com</a>
+  <a href="/"> OriDeThuong.com</a>
 </div>
 <!-- Copyright -->
 
@@ -14,6 +14,7 @@
   <style>
 #footer{
     background-color: #343a40 ;
+    
 }
 #text{
     color: white;

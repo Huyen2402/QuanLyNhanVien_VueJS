@@ -58,7 +58,7 @@ export default {
                  location.href = 'http://127.0.0.1:5173/nhanvien'
 
 
-                this.message = "Đăng nhập thành công.";
+                // this.message = "Đăng nhập thành công.";
             } catch (error) {
                 console.log(error);
                 this.message = "Đăng nhập thất bại.";
@@ -84,19 +84,19 @@ export default {
                         <label for="username">User Name</label>
                         <Field name="username" type="text" class="form-control" v-model="username"
                             placeholder="User Name" />
-                        <ErrorMessage name="username" class="error-feedback" />
+                        <ErrorMessage style="color: red ;" name="username" class="error-feedback" />
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <Field name="password" type="text" class="form-control" v-model="password"
+                        <Field name="password" type="password" class="form-control" v-model="password"
                             placeholder="Password" />
-                        <ErrorMessage name="password" class="error-feedback" />
+                        <ErrorMessage style="color: red ;"  name="password" class="error-feedback" />
                     </div>
 
                     <div class="form-group">
                         <button class="btn btn-black">Đăng nhập</button>
                     </div>
-                    {{message}}
+                   <p style="color: red ;" > {{message}}</p>
                 </Form>
             </div>
         </div>
@@ -120,6 +120,15 @@ body {
     background-color: #000;
     overflow-x: hidden;
     padding-top: 20px;
+}
+.giao-dien{
+    top: 0 !important;
+    
+bottom: 0 !important;
+background: #d7d7d7 ;
+border-radius: 0 !important;
+padding: 0 !important;
+ 
 }
 
 

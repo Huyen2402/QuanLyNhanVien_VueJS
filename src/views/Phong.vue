@@ -4,7 +4,7 @@
             <InputSearch v-model="searchText" />
         </div> -->
         <!-- <div class="mt-3 col-md-6"> -->
-            <h4>
+            <h4 class="text-center">
                 Thông Tin Phòng Ban
                
             </h4>
@@ -14,10 +14,10 @@
             
     <table class="table table-striped">
     <thead>
-      <tr>
-        <th>Tên Phòng</th>
+      <tr >
+        <th><b>Tên Phòng</b></th>
      
-        <th>Thao Tác</th>
+        <th><b>Thao Tác</b></th>
       </tr>
     </thead>
     <tbody >
@@ -29,12 +29,12 @@
     
       </td>
   
-      <td>
+      <td >
         <router-link :to="{
                 name: 'phong.edit',
                 params: { id: contact._id },
                 }">
-                         <button type="button" class="btn btn-warning">Chỉnh Sửa</button>
+                         <button type="button" class="btn btn-warning ">Chỉnh Sửa</button>
                 </router-link>
   
       </td>

@@ -19,9 +19,9 @@ export default {
     <thead>
       <tr>
        
-        <th>Chức Vụ</th>
+        <th><b>Chức Vụ</b></th>
        
-        <th>Thao Tác</th>
+        <th><b>Thao Tác</b></th>
       </tr>
     </thead>
     <tbody >

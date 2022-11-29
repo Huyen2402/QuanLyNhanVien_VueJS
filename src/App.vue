@@ -1,6 +1,7 @@
 <script>
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
+
 export default {
   components: {
     AppHeader,
@@ -15,7 +16,7 @@ export default {
 <template>
   <div  >
     <AppHeader/>
-    <div class="container mt-3">
+    <div class="container mt-3 giao-dien">
       
       <router-view />
     </div>
@@ -29,5 +30,12 @@ export default {
 }
 #ss{
   width: 100%;
+}
+.giao-dien{
+ top: 100px;
+ bottom: 150px;
+ background: white;
+ border-radius: 8px;
+ padding: 80px;
 }
 </style>

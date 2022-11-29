@@ -37,7 +37,7 @@
                 <strong>Liên hệ yêu thích</strong>
             </label>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
             <button class="btn btn-primary">Lưu</button>
             <button v-if="contactLocal._id" type="button" class="ml-2 btn btn-danger" @click="deleteContact">
                 Xóa

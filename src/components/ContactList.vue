@@ -1,4 +1,7 @@
+
+
 <script>
+
 export default {
     props: {
         contacts: { type: Array, default: [] },
@@ -8,23 +11,25 @@ export default {
     methods: {
         updateActiveIndex(index) {
             this.$emit("update:activeIndex", index);
-        }
+        },
+       
     }
 };
 </script>
 <template>
    
 
-    <table class="table table-striped">
+   
+      <table class="table table-striped">
     <thead>
       <tr>
-        <th>Họ Tên</th>
-        <th>Chức Vụ</th>
-        <th>Phòng Ban</th>
-        <th>Email</th>
-        <th>Địa Chỉ</th>
-        <th>SDT</th>
-        <th>Thao Tác</th>
+        <th><b>Họ Tên</b></th>
+        <th><b>Chức Vụ</b></th>
+        <th><b>Phòng Ban</b></th>
+        <th><b>Email</b></th>
+        <th><b>Địa Chỉ</b></th>
+        <th><b>SDT</b></th>
+        <th><b>Thao Tác</b></th>
       </tr>
     </thead>
     <tbody >
@@ -60,13 +65,14 @@ export default {
                 name: 'contact.edit',
                 params: { id: contact._id },
                 }">
-                         <button type="button" class="btn btn-warning">Chỉnh Sửa</button>
+                         <button  class="btn btn-warning">Chỉnh Sửa</button> 
                 </router-link>
-  
+              
       </td>
       
     </tr>
       
     </tbody>
   </table>
+ 
 </template>

@@ -4,7 +4,7 @@
             <InputSearch v-model="searchText" />
         </div> -->
         <!-- <div class="mt-3 col-md-6"> -->
-            <h4>
+            <h4 class="text-center">
                 Thông Tin Nhân Viên
                
             </h4>
